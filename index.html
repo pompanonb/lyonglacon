@@ -1,0 +1,1352 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lyon Glaçon : Livraison Express de Glaçons Premium 24/7 à Lyon et Alentours</title>
+    <meta name="description"
+        content="Lyon Glaçon : Livraison rapide de Glaçons, Glace Cocktail, et Glace Carbonique en moins d'une heure sur Lyon et ses environs. Service 24/7, même les dimanches et jours fériés." />
+    <link rel="icon" type="image/svg+xml" href="./img/ice-cube-favicon.svg">
+    <link rel="canonical" href="https://www.lyonglacon.fr" />
+    <meta name="robots" content="index, follow" />
+
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.lyonglacon.fr" />
+    <meta property="og:title" content="Lyon Glaçon : Livraison Express de Glaçons Premium 24/7" />
+    <meta property="og:description"
+        content="Livraison rapide de Glaçons, Glace Cocktail, et Glace Carbonique à Lyon. Service 24/7." />
+    <meta property="og:image" content="https://www.lyonglacon.fr/img/logo-lyonglacon.svg" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://www.lyonglacon.fr" />
+    <meta property="twitter:title" content="Lyon Glaçon : Livraison Express de Glaçons Premium 24/7" />
+    <meta property="twitter:description"
+        content="Livraison rapide de Glaçons, Glace Cocktail, et Glace Carbonique à Lyon. Service 24/7." />
+    <meta property="twitter:image" content="https://www.lyonglacon.fr/img/logo-lyonglacon.svg" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.css" />
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.js"></script>
+
+
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": ["LocalBusiness", "IceDelivery"],
+            "name": "Lyon Glaçon",
+            "image": "https://www.lyonglacon.fr/img/logo-lyonglacon.svg",
+            "description": "Livraison de glaçons premium et glace carbonique à Lyon et ses environs, 24h/24 et 7j/7.",
+            "url": "https://www.lyonglacon.fr",
+            "telephone": "+33764191818",
+            "email": "contact@lyonglacon.fr",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": " 16b Rue d'Alsace",
+                "addressLocality": "Villeurbanne",
+                "postalCode": "69100",
+                "addressCountry": "FR"
+            },
+            "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": 45.7578137,
+                "longitude": 4.8320114
+            },
+            "openingHoursSpecification": {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": [
+                    "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"
+                ],
+                "opens": "00:00",
+                "closes": "23:59"
+            },
+            "sameAs": [
+                "https://www.facebook.com/lyonglacon",
+                "https://www.instagram.com/lyonglacon"
+            ],
+            "priceRange": "€€",
+            "currenciesAccepted": "EUR",
+            "paymentAccepted": "Cash, Credit Card",
+            "areaServed": {
+                "@type": "GeoCircle",
+                "geoMidpoint": {
+                    "@type": "GeoCoordinates",
+                    "latitude": 45.7578137,
+                    "longitude": 4.8320114
+                },
+                "geoRadius": "300000"
+            },
+            "hasOfferCatalog": {
+                "@type": "OfferCatalog",
+                "name": "Catalogue de Glaçons Premium",
+                "itemListElement": [{
+                        "@type": "Offer",
+                        "itemOffered": {
+                            "@type": "Product",
+                            "name": "Glace Cocktail®",
+                            "description": "Parfaite pour les événements raffinés.",
+                            "image": "https://www.lyonglacon.fr/img/glace-cocktail.jpg",
+                            "sku": "GC-001",
+                            "weight": {
+                                "@type": "QuantitativeValue",
+                                "value": "7",
+                                "unitCode": "KGM"
+                            },
+                            "offers": {
+                                "@type": "Offer",
+                                "price": "18.00",
+                                "priceCurrency": "EUR"
+                            }
+                        }
+                    },
+                    {
+                        "@type": "Offer",
+                        "itemOffered": {
+                            "@type": "Product",
+                            "name": "CUBE Clear Ice®",
+                            "description": "Transparence cristalline pour les connaisseurs.",
+                            "image": "https://www.lyonglacon.fr/img/cube-clear-ice.jpg",
+                            "sku": "CCI-001",
+                            "weight": {
+                                "@type": "QuantitativeValue",
+                                "value": "7",
+                                "unitCode": "KGM"
+                            },
+                            "offers": {
+                                "@type": "Offer",
+                                "price": "16.00",
+                                "priceCurrency": "EUR"
+                            }
+                        }
+                    },
+                    {
+                        "@type": "Offer",
+                        "itemOffered": {
+                            "@type": "Product",
+                            "name": "Glace Carbonique",
+                            "description": "Effet spectaculaire pour vos événements.",
+                            "image": "https://www.lyonglacon.fr/img/glace-carbonique.jpg",
+                            "sku": "GCB-001",
+                            "weight": {
+                                "@type": "QuantitativeValue",
+                                "value": "3.5",
+                                "unitCode": "KGM"
+                            },
+                            "offers": {
+                                "@type": "Offer",
+                                "price": "54.00",
+                                "priceCurrency": "EUR"
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    </script>
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        dark: {
+                            bg: "#1a202c",
+                            text: "#e2e8f0",
+                        },
+                    },
+                },
+            },
+        };
+    </script>
+    <style>
+        body {
+            font-family: "Poppins", sans-serif;
+            background-color: #1a202c;
+            color: #e2e8f0;
+        }
+
+        @keyframes gradient {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        .hero-parallax {
+            background: linear-gradient(-45deg, #5257DF, #2D85DA, #00B8D7, #328db4);
+            background-size: 400% 400%;
+            animation: gradient 15s ease infinite;
+            /* Assure que le dégradé a assez d'espace pour bouger */
+            /* background-position: 0% 50%;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-size: cover; */
+            color: white;
+        }
+
+        .ice-icon {
+            font-size: 48px;
+            height: 120px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 12px 12px 0 0;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .cocktail {
+            background: white;
+        }
+
+        .cube {
+            background: white;
+        }
+
+        .carbonique {
+            background: white;
+        }
+
+        .sphere {
+            background: white;
+        }
+
+        .ice-card {
+            transition: all 0.3s ease;
+            background-color: #2d3748;
+        }
+
+        .ice-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .section-alt {
+            background-color: #2d3748;
+        }
+
+        .floating-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 100;
+        }
+
+        .bg-gradient-button {
+            background-image: linear-gradient(135deg, #5257DF 0%, #2D85DA 67%, #00B8D7 100%);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 9999px;
+            /* rounded-full in Tailwind */
+            text-align: center;
+            font-weight: bold;
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .bg-gradient-button:hover {
+            background-image: linear-gradient(135deg, #00B8D7 0%, #2D85DA 67%, #5257DF 100%);
+            box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+        }
+
+        .progress-bar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 4px;
+            background: linear-gradient(135deg, #00B8D7 0%, #2D85DA 67%, #5257DF 100%);
+            z-index: 9999;
+        }
+
+        .sr-only {
+            position: absolute;
+
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border-width: 0;
+        }
+
+        #map {
+            height: 400px;
+            width: 100%;
+            z-index: 1;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-900 text-gray-100">
+    <div class="progress-bar" style="width: 0%"></div>
+    <header class="bg-gray-800 shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="text-3xl font-bold text-blue-400 flex items-center">
+                <span class="sr-only">Lyon Glaçon</span>
+                <img src="./img/logo-lyonglacon.svg" alt="Lyon Glaçon" class="h-12" />
+            </div>
+            <button id="menu-toggle" class="text-gray-300 md:hidden focus:outline-none">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7">
+                    </path>
+                </svg>
+            </button>
+            <nav id="menu" class="hidden md:flex space-x-6">
+                <ul class="flex flex-col md:flex-row md:space-x-6 space-y-4 md:space-y-0 mt-4 md:mt-0">
+                    <li>
+                        <a href="#" class="text-gray-300 hover:text-blue-400 transition duration-300">Accueil</a>
+                    </li>
+                    <li>
+                        <a href="#produits"
+                            class="text-gray-300 hover:text-blue-400 transition duration-300">Produits</a>
+                    </li>
+                    <li>
+                        <a href="#livraison"
+                            class="text-gray-300 hover:text-blue-400 transition duration-300">Livraison</a>
+                    </li>
+                    <li>
+                        <a href="#contact" class="text-gray-300 hover:text-blue-400 transition duration-300">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero-parallax" class="hero-parallax text-white py-32">
+            <div class="container mx-auto px-4 text-center" data-aos="fade-up">
+                <h1 class="text-5xl font-bold mb-4">
+                    Vos glaçons livrés en 30 minutes 7J/7
+                </h1>
+                <p class="text-3xl mb-8">
+                    <a href="tel:+33764191818" class="hover:underline">07 64 19 18 18</a>
+                </p>
+                <p class="text-xl mb-8">
+                    Livraison 24h/24, 7j/7, même les dimanches et jours fériés
+                </p>
+                <a href="#produits"
+                    class="bg-white text-blue-600 px-8 py-4 rounded-full text-lg font-semibold hover:bg-blue-100 transition duration-300 shadow-lg">Découvrir
+                    nos produits</a>
+            </div>
+        </section>
+
+        <section id="produits" class="py-20 bg-gray-900">
+            <div class="container mx-auto px-4">
+                <h2 class="text-4xl font-bold text-center text-white mb-12" data-aos="fade-up">
+                    Nos Produits
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Glace Cocktail -->
+                    <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg transform transition duration-300 hover:scale-105"
+                        data-aos="fade-up">
+                        <div class="p-6">
+                            <div class="text-5xl mb-4 text-blue-400">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                    class="w-16 h-16">
+                                    <path d="M0 0h24v24H0z" fill="none" />
+                                    <path
+                                        d="M4 4h4v4H4V4zm6 0h4v4h-4V4zm6 0h4v4h-4V4zM4 10h4v4H4v-4zm6 0h4v4h-4v-4zm6 0h4v4h-4v-4zM4 16h4v4H4v-4zm6 0h4v4h-4v-4zm6 0h4v4h-4v-4z" />
+                                </svg>
+                            </div>
+                            <h3 class="text-2xl font-semibold text-white mb-2">
+                                Glace Cocktail®
+                            </h3>
+                            <p class="text-gray-300 mb-4">
+                                Parfaite pour les événements raffinés.
+                            </p>
+                            <div class="flex justify-between items-center mb-4">
+                                <span class="text-xl font-bold text-blue-400">18€ / 7KG</span>
+                                <a href="#hero-parallax" class="bg-gradient-button">Commander</a>
+
+                            </div>
+
+                            <div x-data="{ activeTab: 'details' }" class="mt-4">
+                                <div class="flex border-b border-gray-700">
+                                    <button @click="activeTab = 'details'"
+                                        :class="{ 'border-b-2 border-blue-500': activeTab === 'details' }"
+                                        class="flex-1 py-2 text-sm font-medium text-gray-300 hover:text-white">
+                                        Détails
+                                    </button>
+                                    <button @click="activeTab = 'usage'"
+                                        :class="{ 'border-b-2 border-blue-500': activeTab === 'usage' }"
+                                        class="flex-1 py-2 text-sm font-medium text-gray-300 hover:text-white">
+                                        Utilisation
+                                    </button>
+                                    <button @click="activeTab = 'storage'"
+                                        :class="{ 'border-b-2 border-blue-500': activeTab === 'storage' }"
+                                        class="flex-1 py-2 text-sm font-medium text-gray-300 hover:text-white">
+                                        Conservation
+                                    </button>
+                                </div>
+                                <div class="mt-4">
+                                    <div x-show="activeTab === 'details'" class="text-gray-300">
+                                        <p>• Forme: Grains fins</p>
+                                        <p>• Taille: Similaire à de la grêle fine</p>
+                                        <p>• Fonte lente</p>
+                                    </div>
+                                    <div x-show="activeTab === 'usage'" class="text-gray-300">
+                                        <p>• Idéal pour les cocktails</p>
+                                        <p>• Refroidit sans diluer rapidement</p>
+                                        <p>• Parfait pour le frappé</p>
+                                    </div>
+                                    <div x-show="activeTab === 'storage'" class="text-gray-300">
+                                        <p>• Conserver au congélateur (-18°C)</p>
+                                        <p>• Utiliser une pelle à glaçons propre</p>
+                                        <p>• Consommer dans les 24 mois</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CUBE Clear Ice (inchangé) -->
+                    <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg transform transition duration-300 hover:scale-105"
+                        data-aos="fade-up" data-aos-delay="100">
+                        <div class="p-6">
+                            <div class="text-5xl mb-4 text-blue-400">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor" class="w-16 h-16">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
+                                </svg>
+                            </div>
+                            <h3 class="text-2xl font-semibold text-white mb-2">
+                                CUBE Clear Ice®
+                            </h3>
+                            <p class="text-gray-300 mb-4">
+                                Transparence cristalline pour les connaisseurs.
+                            </p>
+                            <div class="flex justify-between items-center mb-4">
+                                <span class="text-xl font-bold text-blue-400">16€ / 7KG</span>
+                                <a href="#hero-parallax" class="bg-gradient-button">Commander</a>
+
+                            </div>
+
+                            <div x-data="{ activeTab: 'details' }" class="mt-4">
+                                <div class="flex border-b border-gray-700">
+                                    <button @click="activeTab = 'details'"
+                                        :class="{ 'border-b-2 border-blue-500': activeTab === 'details' }"
+                                        class="flex-1 py-2 text-sm font-medium text-gray-300 hover:text-white">
+                                        Détails
+                                    </button>
+                                    <button @click="activeTab = 'usage'"
+                                        :class="{ 'border-b-2 border-blue-500': activeTab === 'usage' }"
+                                        class="flex-1 py-2 text-sm font-medium text-gray-300 hover:text-white">
+                                        Utilisation
+                                    </button>
+                                    <button @click="activeTab = 'storage'"
+                                        :class="{ 'border-b-2 border-blue-500': activeTab === 'storage' }"
+                                        class="flex-1 py-2 text-sm font-medium text-gray-300 hover:text-white">
+                                        Conservation
+                                    </button>
+                                </div>
+                                <div class="mt-4">
+                                    <div x-show="activeTab === 'details'" class="text-gray-300">
+                                        <p>• Forme: Cubes parfaits</p>
+                                        <p>• Dimension: 3,5cm x 3cm x 3cm</p>
+                                        <p>• Transparence cristalline</p>
+                                    </div>
+                                    <div x-show="activeTab === 'usage'" class="text-gray-300">
+                                        <p>• Idéal pour les spiritueux</p>
+                                        <p>• Fonte très lente</p>
+                                        <p>• Parfait pour la présentation</p>
+                                    </div>
+                                    <div x-show="activeTab === 'storage'" class="text-gray-300">
+                                        <p>• Conserver au congélateur (-18°C)</p>
+                                        <p>• Éviter le contact avec d'autres aliments</p>
+                                        <p>• Utiliser des pinces propres</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Glace Carbonique -->
+                    <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg" data-aos="fade-up"
+                        data-aos-delay="300">
+
+                        <div class="p-6">
+                            <div class="text-5xl mb-4 text-blue-400">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                    class="w-16 h-16">
+                                    <defs>
+                                        <linearGradient id="vaporGradient" x1="0%" y1="100%" x2="0%" y2="0%">
+                                            <stop offset="0%" style="stop-color:currentColor;stop-opacity:0.7" />
+                                            <stop offset="100%" style="stop-color:currentColor;stop-opacity:0" />
+                                        </linearGradient>
+                                    </defs>
+                                    <!-- Cube de glace -->
+                                    <rect x="4" y="16" width="16" height="6" fill="none" stroke="currentColor"
+                                        stroke-width="1" />
+                                    <!-- Effet de vapeur -->
+                                    <path d="M5,16 Q7,14 9,15 T13,14 T17,15 T19,14" fill="none"
+                                        stroke="url(#vaporGradient)" stroke-width="0.5">
+                                        <animate attributeName="d" values="
+                        M5,16 Q7,14 9,15 T13,14 T17,15 T19,14;
+                        M5,16 Q7,13 9,14 T13,13 T17,14 T19,13;
+                        M5,16 Q7,14 9,15 T13,14 T17,15 T19,14" dur="3s" repeatCount="indefinite" />
+                                    </path>
+                                    <path d="M6,15 Q8,13 10,14 T14,13 T18,14" fill="none" stroke="url(#vaporGradient)"
+                                        stroke-width="0.5">
+                                        <animate attributeName="d" values="
+                        M6,15 Q8,13 10,14 T14,13 T18,14;
+                        M6,15 Q8,12 10,13 T14,12 T18,13;
+                        M6,15 Q8,13 10,14 T14,13 T18,14" dur="2.5s" repeatCount="indefinite" />
+                                    </path>
+                                    <path d="M7,14 Q9,12 11,13 T15,12 T19,13" fill="none" stroke="url(#vaporGradient)"
+                                        stroke-width="0.5">
+                                        <animate attributeName="d" values="
+                        M7,14 Q9,12 11,13 T15,12 T19,13;
+                        M7,14 Q9,11 11,12 T15,11 T19,12;
+                        M7,14 Q9,12 11,13 T15,12 T19,13" dur="2s" repeatCount="indefinite" />
+                                    </path>
+                                </svg>
+                            </div>
+                            <h3 class="text-2xl font-semibold text-white mb-2">
+                                Glace Carbonique
+                            </h3>
+                            <p class="text-gray-300 mb-4">
+                                Effet spectaculaire pour vos événements.
+                            </p>
+                            <div class="flex justify-between items-center">
+                                <span class="text-xl font-bold text-blue-400">54€ / 3.5KG</span>
+                                <a href="#hero-parallax" class="bg-gradient-button">Commander</a>
+
+                            </div>
+                            <div x-data="{ activeTab: 'details' }" class="mt-4">
+                                <div class="flex border-b border-gray-700">
+                                    <button @click="activeTab = 'details'"
+                                        :class="{ 'border-b-2 border-blue-500': activeTab === 'details' }"
+                                        class="flex-1 py-2 text-sm font-medium text-gray-300 hover:text-white">
+                                        Détails
+                                    </button>
+                                    <button @click="activeTab = 'usage'"
+                                        :class="{ 'border-b-2 border-blue-500': activeTab === 'usage' }"
+                                        class="flex-1 py-2 text-sm font-medium text-gray-300 hover:text-white">
+                                        Utilisation
+                                    </button>
+                                    <button @click="activeTab = 'storage'"
+                                        :class="{ 'border-b-2 border-blue-500': activeTab === 'storage' }"
+                                        class="flex-1 py-2 text-sm font-medium text-gray-300 hover:text-white">
+                                        Conservation
+                                    </button>
+                                </div>
+                                <div class="mt-4">
+                                    <div x-show="activeTab === 'details'" class="text-gray-300">
+                                        <p>• Température: -78.5°C</p>
+                                        <p>• Forme: Pellets ou blocs</p>
+                                        <p>• Sublimation directe</p>
+                                    </div>
+                                    <div x-show="activeTab === 'usage'" class="text-gray-300">
+                                        <p>• Effet fumée pour représentation</p>
+                                        <p>• Ajoutez une touche de magie à votre prochain événement</p>
+                                        <p>• Parfaite pour une présentation époustouflante de vos plats ou cocktail</p>
+                                    </div>
+                                    <div x-show="activeTab === 'storage'" class="text-gray-300">
+                                        <p>• Utiliser des gants isolants</p>
+                                        <p>• Conserver dans un contenant isolé et ventilé</p>
+                                        <p>• Utiliser dans un espace ventilé</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- SPHÈRE Clear Ice (inchangé) -->
+                    <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg transform transition duration-300 hover:scale-105"
+                        data-aos="fade-up" data-aos-delay="300">
+                        <div class="p-6">
+                            <div class="text-5xl mb-4 text-blue-400">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor" class="w-16 h-16">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                </svg>
+                            </div>
+                            <h3 class="text-2xl font-semibold text-white mb-2">SPHÈRE Clear Ice®</h3>
+                            <p class="text-gray-300 mb-4">Élégance sphérique pour vos boissons.</p>
+                            <div class="flex justify-between items-center mb-4">
+                                <span class="text-xl font-bold text-blue-400">23€ / 4,5KG</span>
+                                <a href="#hero-parallax" class="bg-gradient-button">Commander</a>
+                            </div>
+
+                            <div x-data="{ activeTab: 'details' }" class="mt-4">
+                                <div class="flex border-b border-gray-700">
+                                    <button @click="activeTab = 'details'"
+                                        :class="{ 'border-b-2 border-blue-500': activeTab === 'details' }"
+                                        class="flex-1 py-2 text-sm font-medium text-gray-300 hover:text-white">Détails</button>
+                                    <button @click="activeTab = 'usage'"
+                                        :class="{ 'border-b-2 border-blue-500': activeTab === 'usage' }"
+                                        class="flex-1 py-2 text-sm font-medium text-gray-300 hover:text-white">Utilisation</button>
+                                    <button @click="activeTab = 'storage'"
+                                        :class="{ 'border-b-2 border-blue-500': activeTab === 'storage' }"
+                                        class="flex-1 py-2 text-sm font-medium text-gray-300 hover:text-white">Conservation</button>
+                                </div>
+                                <div class="mt-4">
+                                    <div x-show="activeTab === 'details'" class="text-gray-300">
+                                        <p>• Forme: Sphères parfaites</p>
+                                        <p>• Diamètre: 45 mm</p>
+                                        <p>• Eau pure et bio</p>
+                                    </div>
+                                    <div x-show="activeTab === 'usage'" class="text-gray-300">
+                                        <p>• Idéal pour les whiskies et cocktails premium</p>
+                                        <p>• Fonte très lente et uniforme</p>
+                                        <p>• Effect visuel spectaculaire</p>
+                                    </div>
+                                    <div x-show="activeTab === 'storage'" class="text-gray-300">
+                                        <p>• Conserver au congélateur (-18°C)</p>
+                                        <p>• Manipuler avec des ustensiles propres</p>
+                                        <p>• Éviter les chocs thermiques</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <section id="temoignages" class="bg-gray-900 py-20">
+            <div class="container mx-auto px-4">
+                <h2 class="text-4xl font-bold text-center text-white mb-12" data-aos="fade-up">
+                    Ce que disent nos clients
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="bg-gray-800 p-6 rounded-lg shadow-lg relative overflow-hidden" data-aos="fade-up">
+                        <div
+                            class="absolute top-0 left-0 w-20 h-20 bg-blue-500 opacity-10 rounded-full -translate-x-1/2 -translate-y-1/2">
+                        </div>
+                        <svg class="w-8 h-8 text-blue-500 mb-4" fill="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
+                        </svg>
+                        <p class="text-gray-300 mb-4 relative z-10">
+                            "Service impeccable ! Livraison rapide et glaçons de qualité. Je recommande vivement."
+                        </p>
+                        <div class="flex items-center">
+                            <div
+                                class="w-10 h-10 bg-blue-500 rounded-full flex items-center justify-center text-white font-bold text-lg">
+                                M
+                            </div>
+                            <p class="ml-4 font-semibold text-white">Marie L.</p>
+                        </div>
+                    </div>
+                    <div class="bg-gray-800 p-6 rounded-lg shadow-lg relative overflow-hidden" data-aos="fade-up"
+                        data-aos-delay="100">
+                        <div
+                            class="absolute top-0 left-0 w-20 h-20 bg-blue-500 opacity-10 rounded-full -translate-x-1/2 -translate-y-1/2">
+                        </div>
+                        <svg class="w-8 h-8 text-blue-500 mb-4" fill="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
+                        </svg>
+                        <p class="text-gray-300 mb-4 relative z-10">
+                            "Parfait pour nos soirées cocktails. La glace carbonique crée toujours son petit effet !"
+                        </p>
+                        <div class="flex items-center">
+                            <div
+                                class="w-10 h-10 bg-blue-500 rounded-full flex items-center justify-center text-white font-bold text-lg">
+                                T
+                            </div>
+                            <p class="ml-4 font-semibold text-white">Thomas B.</p>
+                        </div>
+                    </div>
+                    <div class="bg-gray-800 p-6 rounded-lg shadow-lg relative overflow-hidden" data-aos="fade-up"
+                        data-aos-delay="200">
+                        <div
+                            class="absolute top-0 left-0 w-20 h-20 bg-blue-500 opacity-10 rounded-full -translate-x-1/2 -translate-y-1/2">
+                        </div>
+                        <svg class="w-8 h-8 text-blue-500 mb-4" fill="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
+                        </svg>
+                        <p class="text-gray-300 mb-4 relative z-10">
+                            "Un service client au top et des produits de qualité. Je n'irai nulle part ailleurs."
+                        </p>
+                        <div class="flex items-center">
+                            <div
+                                class="w-10 h-10 bg-blue-500 rounded-full flex items-center justify-center text-white font-bold text-lg">
+                                S
+                            </div>
+                            <p class="ml-4 font-semibold text-white">Sophie M.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="qualite-eau" class="mb-16 container mx-auto">
+            <h2 class="text-3xl font-bold text-center text-white mb-8">
+                Qualité de l'eau
+            </h2>
+            <div class="bg-gray-800 rounded-lg shadow-lg p-8">
+                <p class="text-gray-300 mb-6 text-lg leading-relaxed">
+                    Chez Lyon Glaçon, nous accordons une importance capitale à la qualité de l'eau utilisée pour
+                    produire nos glaçons. Notre eau est traitée selon les plus hauts standards pour vous garantir des
+                    glaçons d'une pureté exceptionnelle.
+                </p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6 text-blue-400">
+                    <ul class="space-y-4">
+                        <li class="flex items-center">
+                            <svg class="h-6 w-6 mr-3 text-blue-500" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span class="text-gray-100">Eau traitée non chimiquement</span>
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="h-6 w-6 mr-3 text-blue-500" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span class="text-gray-100">Système de filtration sans ajout ni rejet de sel</span>
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="h-6 w-6 mr-3 text-blue-500" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span class="text-gray-100">Suppression du goût de chlore</span>
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="h-6 w-6 mr-3 text-blue-500" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span class="text-gray-100">Élimination de tous métaux lourds</span>
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="h-6 w-6 mr-3 text-blue-500" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span class="text-gray-100">Suppression des pesticides et herbicides</span>
+                        </li>
+                    </ul>
+                    <ul class="space-y-4">
+                        <li class="flex items-center">
+                            <svg class="h-6 w-6 mr-3 text-blue-500" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span class="text-gray-100">Réduction des nitrates</span>
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="h-6 w-6 mr-3 text-blue-500" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span class="text-gray-100">Suppression du calcaire</span>
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="h-6 w-6 mr-3 text-blue-500" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span class="text-gray-100">Traitement UV bactéricide et anti-virus</span>
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="h-6 w-6 mr-3 text-blue-500" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span class="text-gray-100">Qualité d'eau optimale pour les glaçons</span>
+                        </li>
+                    </ul>
+                </div>
+                <p class="text-gray-300 mt-6 p-4 bg-gray-700 rounded-lg shadow-inner">
+                    Pour plus d'informations sur la qualité de notre eau, n'hésitez pas à contacter notre service
+                    qualité à l'adresse :
+                    <a href="mailto:infoqualite@lyonglacon.fr"
+                        class="text-blue-500 hover:underline font-semibold">infoqualite@lyonglacon.fr</a>
+                </p>
+            </div>
+        </section>
+
+        <section id="livraison" class="py-20 bg-gray-900">
+            <div class="container mx-auto px-4">
+                <h2 class="text-4xl font-bold text-center text-white mb-12" data-aos="fade-up">
+                    Informations de Livraison
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                    <div class="bg-gray-800 rounded-lg shadow-lg p-8" data-aos="fade-right">
+                        <h3 class="text-2xl font-semibold text-blue-400 mb-6">
+                            Zones de livraison
+                        </h3>
+                        <div class="space-y-4 text-gray-300">
+                            <div class="flex items-center">
+                                <svg class="h-8 w-8 mr-4 text-blue-500" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M3.055 11H5l2.5 7h1.83l2.5-7h3.055m2.5 0H21l1.45 4.5h-2.44l-2.5-7h-1.83l-2.5 7H10.39l-2.5-7H5L3.555 7H1L3.055 11z">
+                                    </path>
+                                </svg>
+                                <p>Lyon et Villeurbanne : <span class="font-bold text-blue-400">10€</span></p>
+                            </div>
+                            <div class="flex items-center">
+                                <svg class="h-8 w-8 mr-4 text-green-500" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M3.055 11H5l2.5 7h1.83l2.5-7h3.055m2.5 0H21l1.45 4.5h-2.44l-2.5-7h-1.83l-2.5 7H10.39l-2.5-7H5L3.555 7H1L3.055 11z">
+                                    </path>
+                                </svg>
+                                <p>Caluire, Vaulx-en-Velin, Bron : <span class="font-bold text-green-400">15€</span></p>
+                            </div>
+                            <div class="flex items-center">
+                                <svg class="h-8 w-8 mr-4 text-red-500" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M3.055 11H5l2.5 7h1.83l2.5-7h3.055m2.5 0H21l1.45 4.5h-2.44l-2.5-7h-1.83l-2.5 7H10.39l-2.5-7H5L3.555 7H1L3.055 11z">
+                                    </path>
+                                </svg>
+                                <p>Les Monts d'Or, Décines, Sainte-Foy-lès-Lyon : <span
+                                        class="font-bold text-red-400">20€</span></p>
+                            </div>
+                        </div>
+                        <p class="mt-8 text-gray-400">
+                            Livraison possible dans un rayon de 300 kilomètres autour de Lyon (sur demande).
+                        </p>
+                    </div>
+                    <div data-aos="fade-left">
+                        <div id="map" class="rounded-lg shadow-lg" style="height: 400px;"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="faq" class="py-20 bg-gray-900">
+            <div class="container mx-auto px-4">
+                <h2 class="text-4xl font-bold text-center text-white mb-12" data-aos="fade-up">
+                    Foire Aux Questions
+                </h2>
+                <div class="max-w-3xl mx-auto" x-data="{activeAccordion: null}">
+                    <!-- Commandes et Livraisons -->
+                    <div class="mb-8" data-aos="fade-up">
+                        <h3 class="text-2xl font-semibold text-blue-400 mb-4">Commandes et Livraisons</h3>
+
+                        <div class="bg-gray-800 rounded-lg overflow-hidden mb-4">
+                            <button @click="activeAccordion = activeAccordion === 1 ? null : 1"
+                                class="flex justify-between items-center w-full p-4 text-left">
+                                <span class="text-white font-medium">Comment puis-je commander des glaçons chez Lyon
+                                    Glaçon ?</span>
+                                <svg class="w-6 h-6 text-blue-400 transform transition-transform duration-200"
+                                    :class="{'rotate-180': activeAccordion === 1}" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M19 9l-7 7-7-7"></path>
+                                </svg>
+                            </button>
+                            <div x-show="activeAccordion === 1" x-collapse>
+                                <div class="p-4 border-t border-gray-700 text-gray-300">
+                                    Vous pouvez commander facilement en nous appelant au 07 64 19 18 18. Notre service
+                                    est disponible 24h/24 et 7j/7.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bg-gray-800 rounded-lg overflow-hidden mb-4">
+                            <button @click="activeAccordion = activeAccordion === 2 ? null : 2"
+                                class="flex justify-between items-center w-full p-4 text-left">
+                                <span class="text-white font-medium">Quelles sont vos zones de livraison ?</span>
+                                <svg class="w-6 h-6 text-blue-400 transform transition-transform duration-200"
+                                    :class="{'rotate-180': activeAccordion === 2}" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M19 9l-7 7-7-7"></path>
+                                </svg>
+                            </button>
+                            <div x-show="activeAccordion === 2" x-collapse>
+                                <div class="p-4 border-t border-gray-700 text-gray-300">
+                                    Nous livrons principalement à Lyon et ses environs. Les tarifs varient selon la zone
+                                    :
+                                    <ul class="list-disc list-inside mt-2">
+                                        <li>Lyon et Villeurbanne : 10€</li>
+                                        <li>Caluire, Vaulx-en-Velin, Bron : 15€</li>
+                                        <li>Les Monts d'Or, Décines, Sainte-Foy-lès-Lyon : 20€</li>
+                                    </ul>
+                                    Pour d'autres zones, contactez-nous pour un devis personnalisé.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bg-gray-800 rounded-lg overflow-hidden mb-4">
+                            <button @click="activeAccordion = activeAccordion === 3 ? null : 3"
+                                class="flex justify-between items-center w-full p-4 text-left">
+                                <span class="text-white font-medium">Quel est le délai de livraison</span>
+                                <svg class="w-6 h-6 text-blue-400 transform transition-transform duration-200"
+                                    :class="{'rotate-180': activeAccordion === 3}" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M19 9l-7 7-7-7"></path>
+                                </svg>
+                            </button>
+                            <div x-show="activeAccordion === 3" x-collapse>
+                                <div class="p-4 border-t border-gray-700 text-gray-300">
+                                    Nous nous efforçons de livrer dans les 30 minutes suivant votre commande pour Lyon
+                                    et sa proche banlieue.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bg-gray-800 rounded-lg overflow-hidden mb-4">
+                            <button @click="activeAccordion = activeAccordion === 4 ? null : 4"
+                                class="flex justify-between items-center w-full p-4 text-left">
+                                <span class="text-white font-medium">Livrez-vous les dimanches et jours fériés ?</span>
+                                <svg class="w-6 h-6 text-blue-400 transform transition-transform duration-200"
+                                    :class="{'rotate-180': activeAccordion === 4}" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M19 9l-7 7-7-7"></path>
+                                </svg>
+                            </button>
+                            <div x-show="activeAccordion === 4" x-collapse>
+                                <div class="p-4 border-t border-gray-700 text-gray-300">
+                                    Oui, notre service de livraison est opérationnel 7j/7, y compris les dimanches et
+                                    jours fériés.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Produits -->
+                    <div class="mb-8" data-aos="fade-up" data-aos-delay="100">
+                        <h3 class="text-2xl font-semibold text-blue-400 mb-4">Produits</h3>
+
+                        <div class="bg-gray-800 rounded-lg overflow-hidden mb-4">
+                            <button @click="activeAccordion = activeAccordion === 5 ? null : 5"
+                                class="flex justify-between items-center w-full p-4 text-left">
+                                <span class="text-white font-medium">Quels types de glace proposez-vous ?</span>
+                                <svg class="w-6 h-6 text-blue-400 transform transition-transform duration-200"
+                                    :class="{'rotate-180': activeAccordion === 5}" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M19 9l-7 7-7-7"></path>
+                                </svg>
+                            </button>
+                            <div x-show="activeAccordion === 5" x-collapse>
+                                <div class="p-4 border-t border-gray-700 text-gray-300">
+                                    Nous proposons plusieurs types de glace :
+                                    <ul class="list-disc list-inside mt-2">
+                                        <li>Glace Cocktail® : parfaite pour les événements raffinés</li>
+                                        <li>CUBE Clear Ice® : glaçons transparents pour les connaisseurs</li>
+                                        <li>Glace Carbonique : pour un effet spectaculaire</li>
+                                        <li>SPHÈRE Clear Ice® : glaçons sphériques élégants</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bg-gray-800 rounded-lg overflow-hidden mb-4">
+                            <button @click="activeAccordion = activeAccordion === 6 ? null : 6"
+                                class="flex justify-between items-center w-full p-4 text-left">
+                                <span class="text-white font-medium">Quelle est la différence entre la Glace Cocktail®
+                                    et le CUBE Clear Ice® ?</span>
+                                <svg class="w-6 h-6 text-blue-400 transform transition-transform duration-200"
+                                    :class="{'rotate-180': activeAccordion === 6}" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M19 9l-7 7-7-7"></path>
+                                </svg>
+                            </button>
+                            <div x-show="activeAccordion === 6" x-collapse>
+                                <div class="p-4 border-t border-gray-700 text-gray-300">
+                                    La Glace Cocktail® se présente sous forme de grains fins, idéale pour les cocktails
+                                    et le frappé. Le CUBE Clear Ice® offre des cubes parfaitement transparents,
+                                    excellents pour les spiritueux et une présentation haut de gamme.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bg-gray-800 rounded-lg overflow-hidden mb-4">
+                            <button @click="activeAccordion = activeAccordion === 7 ? null : 7"
+                                class="flex justify-between items-center w-full p-4 text-left">
+                                <span class="text-white font-medium">Comment utiliser la Glace Carbonique en toute
+                                    sécurité ?</span>
+                                <svg class="w-6 h-6 text-blue-400 transform transition-transform duration-200"
+                                    :class="{'rotate-180': activeAccordion === 7}" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M19 9l-7 7-7-7"></path>
+                                </svg>
+                            </button>
+                            <div x-show="activeAccordion === 7" x-collapse>
+                                <div class="p-4 border-t border-gray-700 text-gray-300">
+                                    La Glace Carbonique doit être manipulée avec des gants isolants et utilisée dans un
+                                    espace bien ventilé. Elle est parfaite pour créer un effet de fumée spectaculaire,
+                                    mais ne doit jamais être ingérée.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Ajoutez d'autres questions de la section "Produits" de la même manière -->
+
+                    </div>
+
+                    <!-- Qualité et Conservation -->
+                    <div class="mb-8" data-aos="fade-up" data-aos-delay="200">
+                        <h3 class="text-2xl font-semibold text-blue-400 mb-4">Qualité et Conservation</h3>
+
+                        <div class="bg-gray-800 rounded-lg overflow-hidden mb-4">
+                            <button @click="activeAccordion = activeAccordion === 8 ? null : 8"
+                                class="flex justify-between items-center w-full p-4 text-left">
+                                <span class="text-white font-medium">Quelle est la qualité de l'eau utilisée pour vos
+                                    glaçons ?</span>
+                                <svg class="w-6 h-6 text-blue-400 transform transition-transform duration-200"
+                                    :class="{'rotate-180': activeAccordion === 8}" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M19 9l-7 7-7-7"></path>
+                                </svg>
+                            </button>
+                            <div x-show="activeAccordion === 8" x-collapse>
+                                <div class="p-4 border-t border-gray-700 text-gray-300">
+                                    Nous utilisons une eau de haute qualité, traitée selon des normes strictes. Notre
+                                    processus inclut la filtration, l'élimination du chlore, des métaux lourds, et un
+                                    traitement UV pour garantir des glaçons purs et sans goût.
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="bg-gray-800 rounded-lg overflow-hidden mb-4">
+                            <button @click="activeAccordion = activeAccordion === 9 ? null : 9"
+                                class="flex justify-between items-center w-full p-4 text-left">
+                                <span class="text-white font-medium">Combien de temps puis-je conserver les glaçons
+                                    ?</span>
+                                <svg class="w-6 h-6 text-blue-400 transform transition-transform duration-200"
+                                    :class="{'rotate-180': activeAccordion === 9}" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M19 9l-7 7-7-7"></path>
+                                </svg>
+                            </button>
+                            <div x-show="activeAccordion === 9" x-collapse>
+                                <div class="p-4 border-t border-gray-700 text-gray-300">
+                                    Conservés dans un congélateur à -18°C, nos glaçons peuvent se garder jusqu'à 24
+                                    mois. Cependant, pour une qualité optimale, nous recommandons de les consommer dans
+                                    les semaines suivant la livraison.
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="bg-gray-800 rounded-lg overflow-hidden mb-4">
+                            <button @click="activeAccordion = activeAccordion === 10 ? null : 10"
+                                class="flex justify-between items-center w-full p-4 text-left">
+                                <span class="text-white font-medium">Comment dois-je manipuler les glaçons pour
+                                    préserver leur qualité ?</span>
+                                <svg class="w-6 h-6 text-blue-400 transform transition-transform duration-200"
+                                    :class="{'rotate-180': activeAccordion === 10}" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M19 9l-7 7-7-7"></path>
+                                </svg>
+                            </button>
+                            <div x-show="activeAccordion === 10" x-collapse>
+                                <div class="p-4 border-t border-gray-700 text-gray-300">
+                                    Utilisez toujours des ustensiles propres (pince ou pelle à glaçons) pour manipuler
+                                    les glaçons. Évitez le contact direct avec les mains pour préserver leur pureté et
+                                    leur apparence.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Ajoutez les questions de la section "Qualité et Conservation" ici -->
+
+                    </div>
+
+                    <!-- Événements et Services Spéciaux -->
+                    <div class="mb-8" data-aos="fade-up" data-aos-delay="300">
+                        <h3 class="text-2xl font-semibold text-blue-400 mb-4">Événements et Services Spéciaux</h3>
+                        <div class="bg-gray-800 rounded-lg overflow-hidden mb-4">
+                            <button @click="activeAccordion = activeAccordion === 11 ? null : 11"
+                                class="flex justify-between items-center w-full p-4 text-left">
+                                <span class="text-white font-medium">Proposez-vous des services pour les événements
+                                    professionnels ?</span>
+                                <svg class="w-6 h-6 text-blue-400 transform transition-transform duration-200"
+                                    :class="{'rotate-180': activeAccordion === 11}" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M19 9l-7 7-7-7"></path>
+                                </svg>
+                            </button>
+                            <div x-show="activeAccordion === 11" x-collapse>
+                                <div class="p-4 border-t border-gray-700 text-gray-300">
+                                    Oui, nous offrons des services adaptés aux grands événements professionnels, et
+                                    grandes réceptions. Contactez-nous pour un devis personnalisé selon vos besoins
+                                    spécifiques.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Ajoutez les questions de la section "Événements et Services Spéciaux" ici -->
+
+                    </div>
+
+                    <div data-aos="fade-up" data-aos-delay="400">
+                        <h3 class="text-2xl font-semibold text-blue-400 mb-4">Paiement et Facturation</h3>
+
+                        <div class="bg-gray-800 rounded-lg overflow-hidden mb-4">
+                            <button @click="activeAccordion = activeAccordion === 13 ? null : 13"
+                                class="flex justify-between items-center w-full p-4 text-left">
+                                <span class="text-white font-medium">Quels modes de paiement acceptez-vous ?</span>
+                                <svg class="w-6 h-6 text-blue-400 transform transition-transform duration-200"
+                                    :class="{'rotate-180': activeAccordion === 13}" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M19 9l-7 7-7-7"></path>
+                                </svg>
+                            </button>
+                            <div x-show="activeAccordion === 13" x-collapse>
+                                <div class="p-4 border-t border-gray-700 text-gray-300">
+                                    Nous acceptons les paiements en espèces et par carte bancaire à la livraison. Pour
+                                    les entreprises et les commandes régulières, nous pouvons établir un système de
+                                    facturation mensuelle.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bg-gray-800 rounded-lg overflow-hidden mb-4">
+                            <button @click="activeAccordion = activeAccordion === 14 ? null : 14"
+                                class="flex justify-between items-center w-full p-4 text-left">
+                                <span class="text-white font-medium">Proposez-vous des tarifs préférentiels pour les
+                                    commandes régulières ou en grande quantité ?</span>
+                                <svg class="w-6 h-6 text-blue-400 transform transition-transform duration-200"
+                                    :class="{'rotate-180': activeAccordion === 14}" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M19 9l-7 7-7-7"></path>
+                                </svg>
+                            </button>
+                            <div x-show="activeAccordion === 14" x-collapse>
+                                <div class="p-4 border-t border-gray-700 text-gray-300">
+                                    Oui, nous offrons des tarifs avantageux pour les clients réguliers et les commandes
+                                    en grande quantité. Contactez-nous pour discuter de vos besoins et obtenir une offre
+                                    sur mesure.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bg-gray-800 rounded-lg overflow-hidden mb-4">
+                            <button @click="activeAccordion = activeAccordion === 15 ? null : 15"
+                                class="flex justify-between items-center w-full p-4 text-left">
+                                <span class="text-white font-medium">Comment puis-je obtenir une facture pour ma
+                                    commande ?</span>
+                                <svg class="w-6 h-6 text-blue-400 transform transition-transform duration-200"
+                                    :class="{'rotate-180': activeAccordion === 15}" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M19 9l-7 7-7-7"></path>
+                                </svg>
+                            </button>
+                            <div x-show="activeAccordion === 15" x-collapse>
+                                <div class="p-4 border-t border-gray-700 text-gray-300">
+                                    Une facture est automatiquement générée pour chaque commande. Pour les particuliers,
+                                    elle vous sera remise lors de la livraison. Pour les entreprises avec un compte,
+                                    nous pouvons vous envoyer des factures mensuelles par email ou courrier selon votre
+                                    préférence.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bg-gray-800 rounded-lg overflow-hidden mb-4">
+                            <button @click="activeAccordion = activeAccordion === 16 ? null : 16"
+                                class="flex justify-between items-center w-full p-4 text-left">
+                                <span class="text-white font-medium">Puis-je payer en ligne avant la livraison ?</span>
+                                <svg class="w-6 h-6 text-blue-400 transform transition-transform duration-200"
+                                    :class="{'rotate-180': activeAccordion === 16}" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M19 9l-7 7-7-7"></path>
+                                </svg>
+                            </button>
+                            <div x-show="activeAccordion === 16" x-collapse>
+                                <div class="p-4 border-t border-gray-700 text-gray-300">
+                                    Actuellement, nous n'offrons pas d'option de paiement en ligne avant la livraison.
+                                    Cependant, nous travaillons sur la mise en place de cette fonctionnalité pour
+                                    améliorer votre expérience. Restez à l'écoute pour les mises à jour futures !
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div>
+                <h3 class="text-2xl font-bold mb-4">LyonGlaçon</h3>
+                <p>Votre spécialiste de la glace premium à Lyon et ses environs.</p>
+            </div>
+            <div>
+                <h4 class="text-lg font-semibold mb-4">Liens rapides</h4>
+                <ul class="space-y-2">
+                    <li>
+                        <a href="#" class="hover:text-blue-400 transition duration-300">Accueil</a>
+                    </li>
+                    <li>
+                        <a href="#produits" class="hover:text-blue-400 transition duration-300">Produits</a>
+                    </li>
+                    <li>
+                        <a href="#livraison" class="hover:text-blue-400 transition duration-300">Livraison</a>
+                    </li>
+                    <li>
+                        <a href="#contact" class="hover:text-blue-400 transition duration-300">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <div id="contact">
+                <h4 class="text-lg font-semibold mb-4">Contactez-nous</h4>
+                <p>Tél: <a href="tel:+33764191818">07 64 19 18 18</a></p>
+                <p>
+                    Email:
+                    <a href="mailto:contact@lyonglacon.fr">contact@lyonglacon.fr</a>
+                </p>
+                <p>Livraison 24h/24, 7j/7</p>
+                <p>Même les dimanches et jours fériés</p>
+            </div>
+        </div>
+    </footer>
+    <div class="floating-button">
+        <a href="#hero-parallax" class="bg-gradient-button">Commander</a>
+    </div>
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+
+    <script nonce="abc123">
+        document.addEventListener('DOMContentLoaded', function () {
+            // Votre code ici
+            const menuToggle = document.getElementById('menu-toggle');
+            const menu = document.getElementById('menu');
+
+            menuToggle.addEventListener('click', () => {
+                menu.classList.toggle('hidden');
+            });
+            // Initialisation AOS
+            AOS.init({
+                duration: 800,
+                once: true,
+            });
+
+            // Initialisation Swiper
+            new Swiper(".swiper-container", {
+                slidesPerView: 1,
+                spaceBetween: 20,
+                loop: true,
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+                breakpoints: {
+                    640: {
+                        slidesPerView: 2,
+                    },
+                    1024: {
+                        slidesPerView: 3,
+                    },
+                },
+            });
+
+            // Carte Leaflet
+            var map = L.map("map").setView([45.75, 4.85], 11);
+            L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+                attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+            }).addTo(map);
+
+            // Cercles de livraison
+            L.circle([45.75, 4.85], {
+                    color: "#3b82f6", // Blue for Lyon et Villeurbanne
+                    fillColor: "#3b82f6",
+                    fillOpacity: 0.2,
+                    radius: 5000,
+                })
+                .addTo(map)
+                .bindPopup("Zone de livraison : 10€");
+
+            L.circle([45.75, 4.85], {
+                    color: "#10b981", // Green for Caluire, Vaulx-en-Velin, Bron
+                    fillColor: "#10b981",
+                    fillOpacity: 0.2,
+                    radius: 10000,
+                })
+                .addTo(map)
+                .bindPopup("Zone de livraison : 15€");
+
+            L.circle([45.75, 4.85], {
+                    color: "#ef4444", // Red for Les Monts d'Or, Décines, Sainte-Foy-lès-Lyon
+                    fillColor: "#ef4444",
+                    fillOpacity: 0.2,
+                    radius: 15000,
+                })
+                .addTo(map)
+                .bindPopup("Zone de livraison : 20€");
+
+            // Barre de progression
+            window.addEventListener("scroll", () => {
+                const winScroll =
+                    document.body.scrollTop || document.documentElement.scrollTop;
+                const height =
+                    document.documentElement.scrollHeight -
+                    document.documentElement.clientHeight;
+                const scrolled = (winScroll / height) * 100;
+                document.querySelector(".progress-bar").style.width = scrolled + "%";
+            });
+
+            // FAQ accordéon
+            const faqButtons = document.querySelectorAll("#faq button");
+            faqButtons.forEach((button) => {
+                button.addEventListener("click", () => {
+                    const content = button.nextElementSibling;
+                    content.classList.toggle("hidden");
+                    button.querySelector("svg").classList.toggle("rotate-180");
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
