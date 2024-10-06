@@ -46,6 +46,7 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.js"></script>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
 
     <script type="application/ld+json">
         {
@@ -180,6 +181,7 @@
             font-family: "Poppins", sans-serif;
             background-color: #1a202c;
             color: #e2e8f0;
+            width: 100%;
         }
 
         @keyframes gradient {
@@ -200,11 +202,6 @@
             background: linear-gradient(-45deg, #5257DF, #2D85DA, #00B8D7, #328db4);
             background-size: 400% 400%;
             animation: gradient 15s ease infinite;
-            /* Assure que le dégradé a assez d'espace pour bouger */
-            /* background-position: 0% 50%;
-            background-attachment: fixed;
-            background-repeat: no-repeat;
-            background-size: cover; */
             color: white;
         }
 
@@ -299,10 +296,32 @@
             width: 100%;
             z-index: 1;
         }
+
+        #background-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -2;
+        }
+        #cube-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: -1;
+        }
+        #content-container {
+            position: relative;
+            z-index: 1;
+        }
     </style>
 </head>
 
-<body class="bg-gray-900 text-gray-100">
+<body class= text-gray-100">
     <div class="progress-bar" style="width: 0%"></div>
     <header class="bg-gray-800 shadow-md sticky top-0 z-50">
         <div class="container mx-auto px-4 py-4 flex justify-between items-center">
@@ -337,7 +356,8 @@
             </nav>
         </div>
     </header>
-
+    <div id="background-container"></div>
+    <div id="cube-container"></div>
     <main>
         <section id="hero-parallax" class="hero-parallax text-white py-32">
             <div class="container mx-auto px-4 text-center" data-aos="fade-up">
@@ -355,8 +375,8 @@
                     nos produits</a>
             </div>
         </section>
-
-        <section id="produits" class="py-20 bg-gray-900">
+        <div id="content-container">
+        <section id="produits" class="py-20">
             <div class="container mx-auto px-4">
                 <h2 class="text-4xl font-bold text-center text-white mb-12" data-aos="fade-up">
                     Nos Produits
@@ -630,7 +650,7 @@
                     </div>
                 </div>
         </section>
-        <section id="temoignages" class="bg-gray-900 py-20">
+        <section id="temoignages" class="py-20">
             <div class="container mx-auto px-4">
                 <h2 class="text-4xl font-bold text-center text-white mb-12" data-aos="fade-up">
                     Ce que disent nos clients
@@ -799,7 +819,7 @@
             </div>
         </section>
 
-        <section id="livraison" class="py-20 bg-gray-900">
+        <section id="livraison" class="py-20">
             <div class="container mx-auto px-4">
                 <h2 class="text-4xl font-bold text-center text-white mb-12" data-aos="fade-up">
                     Informations de Livraison
@@ -851,7 +871,7 @@
         </section>
 
 
-        <section id="faq" class="py-20 bg-gray-900">
+        <section id="faq" class="py-20">
             <div class="container mx-auto px-4">
                 <h2 class="text-4xl font-bold text-center text-white mb-12" data-aos="fade-up">
                     Foire Aux Questions
@@ -860,7 +880,6 @@
                     <!-- Commandes et Livraisons -->
                     <div class="mb-8" data-aos="fade-up">
                         <h3 class="text-2xl font-semibold text-blue-400 mb-4">Commandes et Livraisons</h3>
-
                         <div class="bg-gray-800 rounded-lg overflow-hidden mb-4">
                             <button @click="activeAccordion = activeAccordion === 1 ? null : 1"
                                 class="flex justify-between items-center w-full p-4 text-left">
@@ -873,6 +892,7 @@
                                         d="M19 9l-7 7-7-7"></path>
                                 </svg>
                             </button>
+                            <span x-show="activeAccordion === 1"></span>
                             <div x-show="activeAccordion === 1" x-collapse>
                                 <div class="p-4 border-t border-gray-700 text-gray-300">
                                     Vous pouvez commander facilement en nous appelant au 07 64 19 18 18. Notre service
@@ -892,6 +912,7 @@
                                         d="M19 9l-7 7-7-7"></path>
                                 </svg>
                             </button>
+                            <span x-show="activeAccordion === 2"></span>
                             <div x-show="activeAccordion === 2" x-collapse>
                                 <div class="p-4 border-t border-gray-700 text-gray-300">
                                     Nous livrons principalement à Lyon et ses environs. Les tarifs varient selon la zone
@@ -917,6 +938,7 @@
                                         d="M19 9l-7 7-7-7"></path>
                                 </svg>
                             </button>
+                            <span x-show="activeAccordion === 3"></span>
                             <div x-show="activeAccordion === 3" x-collapse>
                                 <div class="p-4 border-t border-gray-700 text-gray-300">
                                     Nous nous efforçons de livrer dans les 30 minutes suivant votre commande pour Lyon
@@ -936,6 +958,7 @@
                                         d="M19 9l-7 7-7-7"></path>
                                 </svg>
                             </button>
+                            <span x-show="activeAccordion === 4"></span>
                             <div x-show="activeAccordion === 4" x-collapse>
                                 <div class="p-4 border-t border-gray-700 text-gray-300">
                                     Oui, notre service de livraison est opérationnel 7j/7, y compris les dimanches et
@@ -960,6 +983,7 @@
                                         d="M19 9l-7 7-7-7"></path>
                                 </svg>
                             </button>
+                            <span x-show="activeAccordion === 5"></span>
                             <div x-show="activeAccordion === 5" x-collapse>
                                 <div class="p-4 border-t border-gray-700 text-gray-300">
                                     Nous proposons plusieurs types de glace :
@@ -985,6 +1009,7 @@
                                         d="M19 9l-7 7-7-7"></path>
                                 </svg>
                             </button>
+                            <span x-show="activeAccordion === 6"></span>
                             <div x-show="activeAccordion === 6" x-collapse>
                                 <div class="p-4 border-t border-gray-700 text-gray-300">
                                     La Glace Cocktail® se présente sous forme de grains fins, idéale pour les cocktails
@@ -1006,6 +1031,7 @@
                                         d="M19 9l-7 7-7-7"></path>
                                 </svg>
                             </button>
+                            <span x-show="activeAccordion === 7"></span>
                             <div x-show="activeAccordion === 7" x-collapse>
                                 <div class="p-4 border-t border-gray-700 text-gray-300">
                                     La Glace Carbonique doit être manipulée avec des gants isolants et utilisée dans un
@@ -1035,6 +1061,7 @@
                                         d="M19 9l-7 7-7-7"></path>
                                 </svg>
                             </button>
+                            <span x-show="activeAccordion === 8"></span>
                             <div x-show="activeAccordion === 8" x-collapse>
                                 <div class="p-4 border-t border-gray-700 text-gray-300">
                                     Nous utilisons une eau de haute qualité, traitée selon des normes strictes. Notre
@@ -1057,6 +1084,7 @@
                                         d="M19 9l-7 7-7-7"></path>
                                 </svg>
                             </button>
+                            <span x-show="activeAccordion === 9"></span>
                             <div x-show="activeAccordion === 9" x-collapse>
                                 <div class="p-4 border-t border-gray-700 text-gray-300">
                                     Conservés dans un congélateur à -18°C, nos glaçons peuvent se garder jusqu'à 24
@@ -1079,6 +1107,7 @@
                                         d="M19 9l-7 7-7-7"></path>
                                 </svg>
                             </button>
+                            <span x-show="activeAccordion === 10"></span>
                             <div x-show="activeAccordion === 10" x-collapse>
                                 <div class="p-4 border-t border-gray-700 text-gray-300">
                                     Utilisez toujours des ustensiles propres (pince ou pelle à glaçons) pour manipuler
@@ -1107,6 +1136,7 @@
                                         d="M19 9l-7 7-7-7"></path>
                                 </svg>
                             </button>
+                            <span x-show="activeAccordion === 11"></span>
                             <div x-show="activeAccordion === 11" x-collapse>
                                 <div class="p-4 border-t border-gray-700 text-gray-300">
                                     Oui, nous offrons des services adaptés aux grands événements professionnels, et
@@ -1134,6 +1164,7 @@
                                         d="M19 9l-7 7-7-7"></path>
                                 </svg>
                             </button>
+                            <span x-show="activeAccordion === 13"></span>
                             <div x-show="activeAccordion === 13" x-collapse>
                                 <div class="p-4 border-t border-gray-700 text-gray-300">
                                     Nous acceptons les paiements en espèces et par carte bancaire à la livraison. Pour
@@ -1155,6 +1186,7 @@
                                         d="M19 9l-7 7-7-7"></path>
                                 </svg>
                             </button>
+                            <span x-show="activeAccordion === 14"></span>
                             <div x-show="activeAccordion === 14" x-collapse>
                                 <div class="p-4 border-t border-gray-700 text-gray-300">
                                     Oui, nous offrons des tarifs avantageux pour les clients réguliers et les commandes
@@ -1176,6 +1208,7 @@
                                         d="M19 9l-7 7-7-7"></path>
                                 </svg>
                             </button>
+                            <span x-show="activeAccordion === 15"></span>
                             <div x-show="activeAccordion === 15" x-collapse>
                                 <div class="p-4 border-t border-gray-700 text-gray-300">
                                     Une facture est automatiquement générée pour chaque commande. Pour les particuliers,
@@ -1197,6 +1230,7 @@
                                         d="M19 9l-7 7-7-7"></path>
                                 </svg>
                             </button>
+                            <span x-show="activeAccordion === 15"></span>
                             <div x-show="activeAccordion === 16" x-collapse>
                                 <div class="p-4 border-t border-gray-700 text-gray-300">
                                     Actuellement, nous n'offrons pas d'option de paiement en ligne avant la livraison.
@@ -1209,6 +1243,7 @@
                 </div>
             </div>
         </section>
+        </div>
 
 
     </main>
@@ -1246,14 +1281,118 @@
                 <p>Livraison 24h/24, 7j/7</p>
                 <p>Même les dimanches et jours fériés</p>
             </div>
-        </div>
     </footer>
+    </div>
     <div class="floating-button">
         <a href="#hero-parallax" class="bg-gradient-button">Commander</a>
     </div>
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+ <script>
+        // Configuration de la scène Three.js
+        const scene = new THREE.Scene();
+        const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+        const renderer = new THREE.WebGLRenderer({ alpha: true, antialias: true });
+        renderer.setSize(window.innerWidth, window.innerHeight);
+        document.getElementById('cube-container').appendChild(renderer.domElement);
 
+        // Shader pour le dégradé (inchangé)
+        const vertexShader = `
+            varying vec2 vUv;
+            void main() {
+                vUv = uv;
+                gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0);
+            }
+        `;
+
+        const fragmentShader = `
+            uniform vec3 color1;
+            uniform vec3 color2;
+            uniform vec3 color3;
+            uniform vec3 color4;
+            varying vec2 vUv;
+            
+            void main() {
+                vec3 color = mix(
+                    mix(color1, color2, vUv.x),
+                    mix(color3, color4, vUv.x),
+                    vUv.y
+                );
+                gl_FragColor = vec4(color, 0.6); // Augmentation de la transparence
+            }
+        `;
+
+        // Création du glaçon
+        const geometry = new THREE.BoxGeometry(1, 1, 1);
+        const material = new THREE.ShaderMaterial({
+            uniforms: {
+                color1: { value: new THREE.Color(0x5257DF) },
+                color2: { value: new THREE.Color(0x2D85DA) },
+                color3: { value: new THREE.Color(0x00B8D7) },
+                color4: { value: new THREE.Color(0x328db4) }
+            },
+            vertexShader: vertexShader,
+            fragmentShader: fragmentShader,
+            transparent: true
+        });
+
+        const iceCube = new THREE.Mesh(geometry, material);
+        scene.add(iceCube);
+
+        // Ajout d'une lumière ambiante
+        const ambientLight = new THREE.AmbientLight(0xffffff, 0.5);
+        scene.add(ambientLight);
+
+        // Ajout d'une lumière directionnelle
+        const directionalLight = new THREE.DirectionalLight(0xffffff, 0.8);
+        directionalLight.position.set(5, 5, 5);
+        scene.add(directionalLight);
+
+        camera.position.z = 5;
+
+        // Variables pour l'animation
+        let cubeTargetY = 0;
+        const scrollableHeight = document.documentElement.scrollHeight - window.innerHeight;
+
+        // Fonction d'animation
+        function animate() {
+            requestAnimationFrame(animate);
+
+            // Animation de rebond
+            iceCube.position.y += (cubeTargetY - iceCube.position.y) * 0.1;
+            iceCube.rotation.x += 0.005;
+            iceCube.rotation.y += 0.005;
+
+            renderer.render(scene, camera);
+        }
+
+        // Gestion du scroll
+        function handleScroll() {
+            const scrollPosition = window.pageYOffset;
+            const scrollProgress = scrollPosition / scrollableHeight;
+            
+            // Calculer la position cible du glaçon
+            cubeTargetY = (scrollProgress - 0.5) * 4;
+        }
+
+        // Gestion du redimensionnement
+        function onWindowResize() {
+            camera.aspect = window.innerWidth / window.innerHeight;
+            camera.updateProjectionMatrix();
+            renderer.setSize(window.innerWidth, window.innerHeight);
+        }
+
+        // Initialisation
+        window.addEventListener('scroll', handleScroll);
+        window.addEventListener('resize', onWindowResize);
+        
+        // Démarrer l'animation
+        animate();
+        
+        // Mettre à jour la position du glaçon périodiquement
+        setInterval(handleScroll, 100);
+    </script>
     <script nonce="abc123">
+        
         document.addEventListener('DOMContentLoaded', function () {
             // Votre code ici
             const menuToggle = document.getElementById('menu-toggle');
